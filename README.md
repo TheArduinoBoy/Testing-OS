@@ -5,6 +5,8 @@ Follow Poncho's OS DEV - S1 (https://www.youtube.com/playlist?list=PLxN4E629pPnK
 
 If you want contribute in this project create **Pull Request**
 
+Please read LICENSE
+
 # Building & Running
 
 ### Software you need
