@@ -14,6 +14,6 @@ Please read LICENSE
 2. Bochs
 3. Visual Studio 2019 or greater (in future)
 
-Run **compile.bat** or **compile_linux** and create owb Bochs config like **bootloader.flp** file
+Run **compile.bat** or **compile_linux.sh** and create own Bochs config like **bootloader.flp** file
 
 For more info about building and running check Poncho's first episode
