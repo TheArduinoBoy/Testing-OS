@@ -3,6 +3,9 @@
 
 
 nasm bootloader.asm -f bin -o bootloader.flp
+nasm ExtendedProgram.asm -f bin -o ExtendedProgram.bin
+
+copy /b Bootloader.bin+ExtendedProgram.bin Bootloader.flp
 
 read -s -n 1 -p "Press any key to continue . . ."
 echo ""
