@@ -1,28 +1,25 @@
 
 [org 0x7c00]
 
+mov [BOOT_DISK], dl
+
 mov bp, 0x7c00
 mov sp, bp
 
-mov bx, TestString
-call PrintString
 
-jmp $
 
-PrintString:
-	mov ah, 0x0e
-	.Loop:
-	cmp [bx], byte 0
-	je .Exit
-		mov al, [bx]
-		int 0x10
-		inc bx
-		jmp .Loop
-	.Exit:
-	ret
+call ReadDisk
 
-TestString:
-	db 'Hello World!! TestingOS by Andrej123456789', 0
+mov ah, 0x0e
+mov al, [PROGRAM_SPACE]
+int 0x10
+
+jmp PROGRAM_SPACE
+
+
+%include "print.asm"
+%include "DiskRead.asm"
+
 
 times 510-($-$$) db 0
 
