@@ -5,7 +5,9 @@ This operating system follow Poncho's OS DEV - S1 (https://www.youtube.com/playl
 
 If you want contribute in this project create **Pull Request**
 
-Please read LICENSE
+PLEASE READ LICENSE
+
+MOST FOCUS OF DEVELOING BIOS OPERATING SYSTEMS IS ringOSY.
 
 # Building & Running
 
